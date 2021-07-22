@@ -17,7 +17,7 @@ quizForm.addEventListener('submit', (e)=>{
         score++;
        }
        else{
-        queDivs[index].style.backgroundColor = "pink";
+        queDivs[index].style.backgroundColor = "red";
        }
         index++;
     }
