@@ -1,4 +1,3 @@
-const areaCalBlock = document.querySelectorAll(".areaCalBlock");
 const areaShowHere = document.querySelectorAll(".areaShowHere");
 
 const inputInOption1 = document.querySelectorAll(".inputInOption1");
@@ -7,24 +6,7 @@ const inputInOption3 = document.querySelectorAll(".inputInOption3");
 
 const errorDiv= document.querySelector(".error");
 
-const radios = document.forms[0].elements;
-console.log(radios);
 
-radios[0].addEventListener('change', ()=>{
-    showOrHideBlock(areaCalBlock, 0, 1, 2);
-})
-radios[1].addEventListener('change', ()=>{
-    showOrHideBlock(areaCalBlock, 1, 0, 2);
-})
-radios[2].addEventListener('change', ()=>{
-    showOrHideBlock(areaCalBlock, 2, 1, 0);
-})
-
-function showOrHideBlock(blockDivs, showDivIndex, hideDivIndex1, hideDivIndex2){
-    blockDivs[showDivIndex].style.display = "block";
-    blockDivs[hideDivIndex1].style.display = "none";
-    blockDivs[hideDivIndex2].style.display = "none";
-}
 
 
 document.forms[1].addEventListener('submit', (e)=>{

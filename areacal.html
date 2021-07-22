@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area calculating app</title>
-
+    <link rel="stylesheet" href="stylearea.css">
 </head>
 <body>
-    <div class="verticalMiddle">
+    <div class="contents">
         <section class="section">
-            <div class="backCTAContainer">
-                <i class="fas fa-chevron-left"></i><a href="/index.html">Go Back</a>
+            <div class="backHome">
+                <a href="/index.html">Go Back</a>
             </div>
-            <h1>Calculate Area</h1>
-            <h3>Select an option below as per the data you have for a triangle</h3>
+            <h1>Calculate Area of a Triangles</h1>
+            <h3>Select which type of data you have to calculate the area of triangle</h3>
 
             <!-- select option to calculate area -->
-            <form class="formulaSelectionForm">
+            <form class="typeOfInput">
                 <div class="options">
                     <a href="#area1" class="scrolling">If you have base and height length</a>
                     
@@ -25,8 +25,8 @@
                     <a href="#area2" class="scrolling">If you have length of 3 sides</a>
                     
                 </div>
-                <div class="option11s">
-                    <a href="#area3" class="scrolling">If you have length of 2 sides and included angle</a>
+                <div class="options">
+                    <a href="#area3" class="scrolling">If you have length of 2 sides and 1 angle</a>
                     
                 </div>
             </form>
@@ -38,24 +38,24 @@
             <br>
 
             <!-- area calculation 1st formula -->
-            <div style="margin-top: 1rem; margin-bottom: 1rem;" class="areaCalBlock" id="area1">
+            <div style="margin-top: 1rem; margin-bottom: 10rem;" class="inputTypes" id="area1">
                 <h2>Calculating with the help of base and height length:</h2>
                 <div class="triangle">
-                    <img src="/triangle.png" alt="" width="15%">
+                    <img src="/triangle.png" alt="" width="45%">
                 </div>
                 
                 <form class="form" class="formForAreaCal">
                     <label class="label">base=
-                        <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required> 
+                        <input class="inputBoxes inputInOption1" type="number" min="0.0001" step="0.00001" required> 
                     </label>
 
                     <label class="label">height=
-                        <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption1" type="number" min="0.0001" step="0.00001" required>
                     </label>
                     
                     <button class="button" id="submitBtn">calculate</button>
-                    <h4>formula:</h4>
-                    <h4>Area=1/2*base*height</h4>
+                    <h3>formula:</h3>
+                    <h3>Area=1/2*base*height</h3>
                 </form>
                 <h2>Calculated area will be displayed here.</h2>
                 <div class="outputHere">
@@ -69,30 +69,30 @@
             <br>
 
             <!-- area calculation 2nd formula -->
-            <div style="margin-top: 1rem; margin-bottom: 1rem;" class="areaCalBlock" id="area2">
+            <div style="margin-top: 1rem; margin-bottom: 10rem;" class="inputTypes" id="area2">
                 <h2>Calculating with the help of 3 sides:</h2>
                 <div class="triangle">
-                    <img src="/triangle2.jpg" alt="" width="15%">
+                    <img src="/triangle2.jpg" alt="" width="45%">
                 </div>
                 
                 <form class="form" class="formForAreaCal">
                     
                     <label class="label">a=
-                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption2" type="number" min="0.0001" step="0.00001" required>
                     </label>
                     
                     <label class="label">b=
-                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption2" type="number" min="0.0001" step="0.00001" required>
                     </label>
                     
                     <label class="label">c=
-                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption2" type="number" min="0.0001" step="0.00001" required>
                     </label>
-                    <p class="label error" style="color: rgb(250, 43, 43);">Enter valid side lengths such that each side length should be less than sum of other two sides</p>
+                    <p class="label error" style="color: #30314F">Enter valid side lengths such that each side length should be less than sum of other two sides</p>
                     
                     <button class="button" id="submitBtn">calculate</button>
-                    <h4>formula:</h4>
-                    <h4>Area=<span>√</span>(s-a)(s-b)(s-c)</h4>
+                    <h3>formula:</h3>
+                    <h3>Area=<span>√</span>s(s-a)(s-b)(s-c)</h3>
                 </form>
                 <h2>Calculated area will be displayed here.</h2>
                 <div class="outputHere">
@@ -106,29 +106,29 @@
             <br>
             
             <!-- area calculation 3rd formula -->
-            <div style="margin-top: 1rem; margin-bottom: 1rem;" class="areaCalBlock" id="area3">
+            <div style="margin-top: 5rem; margin-bottom: 10rem;" class="inputTypes" id="area3">
                 <h2>Calculating with the help of 2 sides and 1 angel:</h2>
                 <div class="triangle">
-                    <img src="/triangle3.png" alt="" width="15%">
+                    <img src="/triangle3.png" alt="" width="45%">
                 </div>
                 
                 <form class="form" class="formForAreaCal">
                     
                     <label class="label">b=
-                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption3" type="number" min="0.0001" step="0.00001" required>
                     </label>
                     
                     <label class="label">c=
-                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                        <input class="inputBoxes inputInOption3" type="number" min="0.0001" step="0.00001" required>
                     </label>
 
                     <label class="label">∠A(deg)=
-                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" max="360" required>
+                        <input class="inputBoxes inputInOption3" type="number" min="0.0001" step="0.00001" max="360" required>
                     </label>
 
                     <button class="button" id="submitBtn">calculate</button>
-                    <h4>formula:</h4>
-                    <h4>Area=1/2*b*c*sin(A)</h4>
+                    <h3>formula:</h3>
+                    <h3>Area=1/2*b*c*sin(A)</h3>
                 </form>
                 <h2>Calculated area will be displayed here.</h2>
                 <div class="outputHere">
