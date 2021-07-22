@@ -2,7 +2,7 @@ const formTriangle = document.querySelector('#formTriangle');
 const inputAngles = document.querySelectorAll('.angleIn');
 const outputDiv= document.querySelector('#isTriangle');
 
-let anglesJS=[];
+let anglesarr=[];
 
 
 document.addEventListener('submit',formTriangleHandler);
@@ -11,11 +11,11 @@ function formTriangleHandler(e){
     e.preventDefault();
 
     for(i=0; i<inputAngles.length; i++){
-        anglesJS[i] = Number(inputAngles[i].value);
+        anglesarr[i] = Number(inputAngles[i].value);
     }
     
     let sum=0;
-    anglesJS.map((angle)=>{
+    anglesarr.map((angle)=>{
         sum=sum+angle;
     })
 
