@@ -3,7 +3,7 @@ const queDivs = document.querySelectorAll(".ow");
 const scoreDiv = document.querySelector(".scoreHere");
 const submitQuiz = document.querySelector("#submitQuiz");
 
-const correctAns = ["option1", "option2", "option1", "option1", "option1", "option2", "option2", "option3", "option3", "option3" ];
+const correctAns = ["option1", "option2", "option2", "option1", "option1", "option2", "option1", "option3", "option1", "option1" ];
 let score= 0;
 
 quizForm.addEventListener('submit', (e)=>{

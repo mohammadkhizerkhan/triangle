@@ -106,7 +106,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 160vh;
+    height: 210vh;
 }
 
 .section{
@@ -130,6 +130,8 @@ a{
     font-weight: bold;
     background-color: #F5CDCD;
     border: 4px solid #93718C;
+    padding: 21px;
+    border-radius: 20px;
 }
 .radio .question{
     display: block;
