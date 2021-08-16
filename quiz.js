@@ -1,4 +1,4 @@
-const quizForm = document.forms[0];
+const quizForm = document.querySelector(".formQuiz");
 const queDivs = document.querySelectorAll(".ow");
 const scoreDiv = document.querySelector(".scoreHere");
 const submitQuiz = document.querySelector("#submitQuiz");
@@ -9,9 +9,10 @@ let score= 0;
 quizForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     const data = new FormData(quizForm);
+    // console.log(data)
     let index=0;
     for(let entry of data){
-        console.log(entry[1])
+        console.log(entry)
        if(entry[1] == correctAns[index]){
         queDivs[index].style.backgroundColor = "lightgreen";
         score++;
