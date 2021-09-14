@@ -1,6 +1,6 @@
 # triangle
-This app contains different functionalites on triangle problems like:
-1>Checking if our three angles can make triangle or not.
+This app contains different functionalites on triangle problems like:\n
+1>Checking if our three angles can make triangle or not.\n
 2>Calculating the hypotenuse.
 3>Calculating the area of a triangle by different approaches like:
    a>If we have base and height length.
